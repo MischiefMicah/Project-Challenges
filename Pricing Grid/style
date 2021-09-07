@@ -1,0 +1,145 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+}
+#menu { 
+    border-radius: 10px;
+    font-family: Karla, sans-serif;
+    display: block;
+    margin:  7% auto;
+    width: 600px;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.15); 
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.15);
+}
+#flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.join {
+    order: 1;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5%;
+}
+.month {
+    order: 2;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 170px;
+    width: 40%;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    padding: 5%;
+}
+.why{
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    width: 40%;
+    background-color: hsl(175, 64%, 48%);
+    border-bottom-right-radius: 10px;
+    padding: 5%;
+}
+#joinHeader {
+    display: inline-block;
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 5px;
+
+}
+#joinSubheader {
+    display: inline-block;
+    color:hsl(71, 73%, 54%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.join > .text {
+    display: inline-block;
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 10px;
+}
+#monthHeader {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+#monthAmount {
+    margin: 0 0 5px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+#monthPer {
+    margin: 0 0 5px 10px;
+    align-self: center;
+    color: hsl(203, 13%, 80%);
+    font-weight: 200;
+}
+#monthText {
+    display: flex;
+    flex-wrap: wrap;
+}
+#signBtn {
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.13); 
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.13);
+}
+#whyHeader {
+    font-size: 18px;
+    margin: 5px 0;
+    color: white;
+    font-weight: 700;
+}
+#whyText {
+    font-size: 16px;
+    line-height: 20px;
+}
+.text {
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    #menu {
+        width: 300px;
+        padding-right: 60px;
+    }
+    #flexContainer {
+        flex-direction: column;
+    }
+    .join {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10%;
+    }
+    .month {
+        width: 100%;
+        height: 200px;
+        border-bottom-left-radius: 0;
+        padding: 10%;
+    }
+    .why {
+        width: 100%;
+        height: 200px;
+        border-bottom-left-radius: 10px;
+        padding: 10%;
+    }
+    #whyHeader {
+        margin: 10px 0 15px 0;
+    }
+}
